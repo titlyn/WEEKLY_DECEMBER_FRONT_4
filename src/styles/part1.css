@@ -92,6 +92,21 @@ header nav #center {
     transition: transform 0.2s ease-in-out;
 }
 
+.links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+}
+
+.links a:hover::before {
+    width: 100%;
+}
+
 .links a::after {
     content: '';
     position: absolute;
@@ -104,10 +119,6 @@ header nav #center {
 
 .links a.active::after{
     width: 100%;
-}
-
-.links a:hover{
-
 }
 
 #work .button-container {
