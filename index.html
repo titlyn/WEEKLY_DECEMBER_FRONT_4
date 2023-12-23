@@ -14,16 +14,16 @@
     <!-- Ny ambony tode mande eto ambany eto fa tsy idina anaty div be ray tsony -->
     <header>
         <nav>
-            <a id="logo" href="/">
+            <div id="logo" href="/">
                 <img src="./assets/logo/logo-dark.svg" class="logo" alt="logo">
-            </a>
+            </div>
 
-            <div class="center">
-                <div id="links">
-                    <a href="#episodes">Home</a>
-                    <a href="#about">Product</a>
-                    <a href="#about">About</a>
-                    <a href="#about">Contact</a>
+            <div id="center">
+                <div class="links">
+                    <a href="#work" nav-link>Home</a>
+                    <a href="#about" nav-link>Product</a>
+                    <a href="#about" nav-link>About</a>
+                    <a href="#about" nav-link>Contact</a>
                 </div>
             </div>
             <div id="login">
@@ -33,10 +33,14 @@
                     </span>
                 </button>
             </div>
+            <div id="menu">
+                <div class="long"></div>
+                <div class="middle"></div>
+                <div class="short"></div>
+            </div>
         </nav>
-        <button id="nav-toggler" name="nav-toggler">
+        <button id="nav-toggler" name="nav-toggler" data-nav-toggle-btn>
             <img src="./assets/icons/menu/menu.svg" id="menu-img" alt="hamburger menu">
-            <img src="./assets/icons/menu/delete.svg" id="quit-img" alt="close menu">
         </button>
     </header>
 
@@ -64,7 +68,7 @@
         </div>
 
         <div class="image-container">
-            <img src="/assets/img/working-microsoft.webp" alt="">
+            <img src="/assets/img/background.webp" alt="">
         </div>
     </div>
 

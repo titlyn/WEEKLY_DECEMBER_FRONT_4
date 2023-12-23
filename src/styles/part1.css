@@ -1,5 +1,34 @@
 header {
     display: flex;
+    padding: 0.8rem 0;
+    align-items: center;
+}
+
+#menu {
+    height: 20px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#menu .long {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+
+#menu .middle {
+    width: 70%;
+    height: 20%;
+    background-color: white;
+}
+
+#menu .short {
+    width: 40%;
+    height: 20%;
+    background-color: white;
 }
 
 #nav-toggler {
@@ -25,7 +54,11 @@ header nav #logo {
     width: 2rem;
 }
 
-header nav .center {
+#logo img {
+    height: 50px;
+}
+
+header nav #center {
     display: flex;
     align-items: center;
     gap: 2.8rem;
@@ -41,20 +74,22 @@ header nav .center {
     justify-content: flex-end;
 }
 
-#links {
+.links{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 2.8rem;
+    align-items: center;
+    width: max-content;
+    gap: 40px;
+    margin-inline: auto;
 }
 
-#links a {
+.links a {
     padding: 0.5rem 0;
     position: relative;
     transition: transform 0.2s ease-in-out;
 }
 
-#links a::after {
+.links a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -64,16 +99,12 @@ header nav .center {
     transition: width 0.2s ease-in-out;
 }
 
-#links a.active::after{
+.links a.active::after{
     width: 100%;
 }
 
-#links a:hover{
-    transform: scaleX(1.2);
-    -webkit-transform: scaleX(1.2);
-    -moz-transform: scaleX(1.2);
-    -ms-transform: scaleX(1.2);
-    -o-transform: scaleX(1.2);
+.links a:hover{
+
 }
 
 
@@ -82,4 +113,102 @@ header nav .center {
     display: flex;
     gap: 2rem;
     margin-top: var(--vert-padding);
+}
+
+#work .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work .image-container img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1600px) {
+	:root {
+		--horiz-padding: 9.5%;
+		--vert-padding: 3.5rem;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	:root {
+		font-size: 14px;
+	}
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+	:root {
+		font-size: 12px;
+		--horiz-padding: 8%;
+		--vert-padding: 4rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	:root {
+		--horiz-padding: 4%;
+		--vert-padding: 4rem;
+		font-size: 12px;
+	}
+
+    #menu {
+        display: flex;
+    }
+
+    #center {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 40%;
+        right: 0;
+        gap: 20px;
+        top: 7rem;
+        flex-grow: 1;
+        background-color: var(--blue); 
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+
+    }
+
+    .active{
+        /* z-index: 1;
+        align-items: center;
+        top: 6.3rem; */
+        max-height: 200px;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 680px) {
+	:root {
+		--vert-padding: 4rem;
+		--horiz-padding: 30px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	:root {
+		--horiz-padding: 20px;
+	}
+
+    .button-container {
+        flex-direction: column;
+    }
+
 }
