@@ -185,7 +185,7 @@
     margin: 4.6rem 0rem 4.6rem 5.6rem;
 }
 
-#cta-content h1 {
+#cta-content h2 {
     font-weight: 200;
     line-height: 3.9rem;
 }
@@ -230,27 +230,6 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    #cta .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-    }
-
-    #cta #cta-content {
-        margin: 4.6rem 5.6rem 4.6rem 5.6rem;
-        text-align: center;
-        align-items: center;
-        max-width: 700px;
-    }
-
-    #cta-img {
-        margin: 0;
-        max-width: 530px;
-        aspect-ratio: 1;
-    }
-}
-
 @media only screen and (max-width: 992px) {
     #img-grid {
         column-gap: 1.6rem;
@@ -279,6 +258,10 @@
 
     #partner #brands #ibm {
         height: 2.1rem;
+    }
+
+    #cta .container {
+        gap: 2rem;
     }
 }
 
@@ -325,8 +308,28 @@
         max-width: unset;
     }
 
+    
+    #cta .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    #cta #cta-content {
+        margin: 4.6rem 5.6rem 4.6rem 5.6rem;
+        text-align: center;
+        align-items: center;
+        max-width: 700px;
+    }
+
+    #cta-img {
+        margin: 0;
+        max-width: 460px;
+        aspect-ratio: 1;
+    }
+
     #cta.content {
-        padding: var(--vert-padding) 0;
+        padding: var(--vert-padding) 0 0 0;
     }
     
     #cta .container{
