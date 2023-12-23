@@ -323,7 +323,7 @@ header nav #center {
         /* z-index: 1;
         align-items: center;
         top: 6.3rem; */
-        max-height: max-content;
+        max-height: 200px;
     }
 
     #features-content {
