@@ -16,7 +16,7 @@
 	--horiz-padding: 12%;
 	--vert-padding: 4rem;
 
-	font-size: 19px;
+	font-size: 20px;
 	color: var(--white);
 }
 
@@ -49,8 +49,18 @@ body {
     background-color: var(--dark-grey);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 body > *{
     width: 100%;
+}
+
+#loader{
+    display: none;
 }
 
 button:hover,
@@ -117,7 +127,7 @@ button.secondary span{
 	:root {
 		--horiz-padding: 9.5%;
 		--vert-padding: 3.5rem;
-		font-size: 16px;
+		font-size: 20px;
 	}
 }
 
@@ -129,7 +139,7 @@ button.secondary span{
 
 @media only screen and (max-width: 1200px) {
 	:root {
-		font-size: 12px;
+		font-size: 14px;
 		--horiz-padding: 8%;
 		--vert-padding: 4rem;
 	}
@@ -139,20 +149,19 @@ button.secondary span{
 	:root {
 		--horiz-padding: 4%;
 		--vert-padding: 4rem;
-		font-size: 12px;
 	}
 }
 
 @media only screen and (max-width: 680px) {
 	:root {
 		--vert-padding: 4rem;
-		--horiz-padding: 30px;
+		--horiz-padding: 50px;
 	}
 }
 
 @media only screen and (max-width: 450px) {
 	:root {
-		--horiz-padding: 20px;
+		--horiz-padding: 40px;
 	}
 
 }
