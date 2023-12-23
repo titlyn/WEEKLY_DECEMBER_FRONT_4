@@ -83,6 +83,21 @@ h6 {
 	font-size: 1.25rem;
 }
 
+button.primary{
+    letter-spacing: 0.0125rem;
+    padding: .8rem 1.8rem;
+
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+
+button.primary span{
+    padding: 0 .4rem;
+}
+
 button.secondary{
     letter-spacing: 0.0125rem;
     padding: .8rem 1.8rem;
