@@ -45,6 +45,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	overflow-x: hidden;
 	/* line-height: 1.5rem; */
     background-color: var(--dark-grey);
 }
@@ -53,6 +54,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 6rem;
+
 }
 
 body > *{
@@ -95,22 +97,29 @@ h6 {
 
 button.primary{
     letter-spacing: 0.0125rem;
-    padding: .8rem 1.8rem;
-
+    padding: 1rem 2.5rem;
+	text-align: center;
+	
     color: var(--white);
     border: 1px solid var(--blue);
     background-color: var(--blue);
-
+	
     box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
 }
 
 button.primary span{
-    padding: 0 .4rem;
+	padding: 0 .4rem;
+}
+
+button.secondary.large{
+	padding: 1rem 2.5rem;
 }
 
 button.secondary{
     letter-spacing: 0.0125rem;
     padding: .8rem 1.8rem;
+
+	text-align: center;
 
     color: var(--white);
     border: 1px solid var(--white);
