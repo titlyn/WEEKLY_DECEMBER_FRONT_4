@@ -9,7 +9,7 @@
     --blue: #4452FE;
     --fluo: #02E4C0;
 
-	--horiz-padding: 10%;
+	--horiz-padding: 12%;
 	--vert-padding: 4rem;
 
 	font-size: 19px;
@@ -76,6 +76,21 @@ h5 {
 
 h6 {
 	font-size: 1.25rem;
+}
+
+button.secondary{
+    letter-spacing: 0.0125rem;
+    padding: .8rem 1.8rem;
+
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: transparent;
+
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+
+button.secondary span{
+    padding: 0 .4rem;
 }
 
 @media only screen and (max-width: 1600px) {
