@@ -1,0 +1,118 @@
+@import '/src/styles/part1.css';
+@import '/src/styles/part2.css';
+
+:root {
+    --black-gradient: #0E0E0E;
+    --dark-grey: #181818;
+    --light-grey: #343434;
+    --white: #FFFFFF;
+    --blue: #4452FE;
+    --fluo: #02E4C0;
+
+	--horiz-padding: 10%;
+	--vert-padding: 4rem;
+
+	font-size: 19px;
+	color: var(--white);
+}
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Monserrat';
+}
+
+a {
+	/* display: inline-flex; */
+	width: max-content;
+	height: max-content;
+	text-decoration: none;
+	color: inherit;
+}
+
+html,
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	/* line-height: 1.5rem; */
+}
+
+button:hover,
+a:hover {
+	cursor: pointer;
+}
+
+
+h1 {
+	font-size: 3.8rem;
+}
+
+h2 {
+	font-size: 3.4rem;
+}
+
+h3 {
+	font-size: 2.6rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+h5 {
+	font-size: 1.4rem;
+}
+
+h6 {
+	font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1600px) {
+	:root {
+		--horiz-padding: 9.5%;
+		--vert-padding: 3.5rem;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	:root {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	:root {
+		font-size: 12px;
+		--horiz-padding: 8%;
+		--vert-padding: 4rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	:root {
+		--horiz-padding: 4%;
+		--vert-padding: 4rem;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	:root {
+		--vert-padding: 4rem;
+		--horiz-padding: 30px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	:root {
+		--horiz-padding: 20px;
+	}
+
+}
