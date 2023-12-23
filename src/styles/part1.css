@@ -1,7 +1,10 @@
 header {
     display: flex;
     padding: 0.8rem 0;
-    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #menu {
@@ -107,8 +110,6 @@ header nav #center {
 
 }
 
-
-
 #work .button-container {
     display: flex;
     gap: 2rem;
@@ -123,6 +124,105 @@ header nav #center {
 
 #work .image-container img {
     width: 100%;
+}
+
+#features-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#left-features {
+    display: flex;
+    position: relative;
+}
+
+#chatbot {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+#linechart {
+    position: absolute;
+    right: -2rem;
+    bottom: -4rem;  
+    height: 250px;
+    width: 400px;
+}
+
+#right-features {
+    padding: 0 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#right-features .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
+#right-features .card .card-title{
+    display: flex;
+    align-items: center;
+}
+
+#right-features .card .card-title .card-logo img{
+    width: 30px;
+}
+
+#right-features .card .card-title .card-text {
+    margin: 0 0 0 .8rem;
+}
+
+#right-features .card p {
+    line-height: 1.5rem;
+}
+
+#contents-content{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#contents-content .content-card {
+    text-align: center;
+    width: 40%;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem 0 1rem 0;
+}
+
+#contents-content .content-card h5 {
+    color: black;
+    margin: 0 0 3rem 0;
+}
+
+#contents-content .content-card p {
+    color: gray;
+    margin: 0 0 4rem 0;
+    line-height: 1.5rem;
+}
+
+#contents-content .content-card button {
+    margin: 0 0 3rem 0;
+}
+
+#contents-content .content-card img {
+    /* height: 200px; */
+    width: 80%;
+
+}
+
+#contents-content .content-card .chat-b {
+    height: 40%;
+    width: 85%;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -147,6 +247,30 @@ header nav #center {
 		--horiz-padding: 8%;
 		--vert-padding: 4rem;
 	}
+
+    #features-content {
+        flex-direction: column;
+    }
+
+    #right-features {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    #right-features .card:nth-child(2) {
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #right-features .card:nth-child(1), .card:nth-child(3) {
+        margin-left: 20%;   
+    }
+
+    #linechart {
+        bottom: 0;
+        right: 3rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -190,9 +314,36 @@ header nav #center {
         max-height: 200px;
     }
 
-    
+    #features-content {
+        flex-direction: column;
+    }
+
+    #linechart {
+        bottom: -4rem;
+        left: 20%;
+    }
+
+    #right-features {
+        margin-top: 15%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contents-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+#contents-content .content-card {
+    text-align: center;
+    width: 50%;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem 0 1rem 0;
+}
 }
 
 @media only screen and (max-width: 680px) {
@@ -200,6 +351,30 @@ header nav #center {
 		--vert-padding: 4rem;
 		--horiz-padding: 30px;
 	}
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    #chatbot {
+        width: 100%;
+        height: 80%;
+    }
+
+    #linechart {
+        width: 60%;
+        height: 40%;
+        bottom: 2rem;
+    }
+
+    #contents-content .content-card {
+        text-align: center;
+        width: 70%;
+        margin: 1rem;
+        background-color: white;
+        border-radius: 10px;
+        padding: 3rem 0 1rem 0;
+    }
 }
 
 @media only screen and (max-width: 450px) {
