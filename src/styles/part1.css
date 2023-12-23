@@ -1,0 +1,85 @@
+header {
+    display: flex;
+}
+
+#nav-toggler {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8rem var(--horiz-padding);
+}
+
+header nav #logo {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+}
+
+header nav .center {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex: 1;
+}
+
+#login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+}
+
+#links a {
+    padding: 0.5rem 0;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+#links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.2rem solid #fff;
+    transition: width 0.2s ease-in-out;
+}
+
+#links a.active::after{
+    width: 100%;
+}
+
+#links a:hover{
+    transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -ms-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+}
+
+
+
+#work .button-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: var(--vert-padding);
+}
