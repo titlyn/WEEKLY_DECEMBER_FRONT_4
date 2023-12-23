@@ -1,5 +1,9 @@
 @import '/src/styles/part1.css';
 @import '/src/styles/part2.css';
+@font-face {
+	font-family: 'Graphik';
+	src: url(/assets/fonts/Graphik-Regular.ttf);
+}
 
 :root {
     --black-gradient: #0E0E0E;
@@ -24,7 +28,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	outline: none;
-	font-family: 'Monserrat';
+	font-family: 'Graphik';
 }
 
 a {
@@ -37,6 +41,7 @@ a {
 
 html,
 body {
+	font-family: 'Graphik';
 	position: relative;
 	width: 100%;
 	height: 100vh;
