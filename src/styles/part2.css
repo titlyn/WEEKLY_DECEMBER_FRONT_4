@@ -210,6 +210,33 @@
     object-position: 0 0;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 12.2rem;
+
+    padding: var(--vert-padding) 0;
+}
+
+footer .left-footer{
+    display: flex;
+    gap: 5.6rem;
+}
+
+footer .footer-content, footer .links, footer .right-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footer-content{
+    gap: 2.5rem;
+}
+
+footer .links{
+    gap: 1rem;
+}
+
 @media only screen and (max-width: 1500px) {
     #img-grid {
         max-width: 1000px;
