@@ -41,6 +41,7 @@ a {
 
 html,
 body {
+	scroll-behavior: smooth;
 	font-family: 'Graphik';
 	position: relative;
 	width: 100%;
