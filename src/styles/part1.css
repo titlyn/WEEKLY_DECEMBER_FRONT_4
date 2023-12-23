@@ -12,7 +12,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: .8rem var(--horiz-padding);
+    padding: 1.8rem var(--horiz-padding);
 }
 
 header nav #logo {
