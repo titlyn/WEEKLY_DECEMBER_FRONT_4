@@ -14,7 +14,7 @@
     --fluo: #02E4C0;
 
 	--horiz-padding: 12%;
-	--vert-padding: 4rem;
+	--vert-padding: 3.4rem;
 
 	font-size: 18px;
 	color: var(--white);
@@ -70,15 +70,15 @@ a:hover {
 
 
 h1 {
-	font-size: 3.8rem;
-}
-
-h2 {
 	font-size: 3.4rem;
 }
 
+h2 {
+	font-size: 2.8rem;
+}
+
 h3 {
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 }
 
 h4 {
@@ -126,7 +126,7 @@ button.secondary span{
 @media only screen and (max-width: 1600px) {
 	:root {
 		--horiz-padding: 9.5%;
-		--vert-padding: 3.5rem;
+		--vert-padding: 3rem;
 		font-size: 18px;
 	}
 }
@@ -141,7 +141,7 @@ button.secondary span{
 	:root {
 		font-size: 14px;
 		--horiz-padding: 8%;
-		--vert-padding: 4rem;
+		--vert-padding: 3.4rem;
 	}
 }
 
