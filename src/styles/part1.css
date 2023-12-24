@@ -134,7 +134,7 @@ header nav #center {
 }
 
 #work{
-    padding-top:  var(--horiz-padding);
+    padding-top:  calc(var(--horiz-padding) / 2);
 }
 
 #work h2{
