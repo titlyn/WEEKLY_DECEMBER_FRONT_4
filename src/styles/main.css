@@ -6,11 +6,13 @@
 }
 
 :root {
-    --black-shadow: #1818185d;
+    --black-shadow: #1818183d;
     --black-gradient: #0E0E0E;
     --dark-grey: #181818;
     --light-grey: #343434;
+    --grey: #5c5c5c;
     --white: #FFFFFF;
+    --black: #000;
     --blue: #4452FE;
     --fluo: #02E4C0;
 
