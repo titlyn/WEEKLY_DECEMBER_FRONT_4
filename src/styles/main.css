@@ -167,6 +167,22 @@ h5 {
 
 h6 {
 	font-size: 1.25rem;
+} 
+
+/* ETo le original*/
+
+button {
+	transition: all 0.3s linear;
+}
+
+.primary:hover {
+	box-shadow: 0rem 0.99rem 0.43rem -0.33rem var(--blue);
+	transform: translateY(-0.5rem);
+}
+
+.secondary:hover {
+	box-shadow: 0rem 0.99rem 0.43rem -0.33rem var(--white);
+	transform: translateY(-0.5rem);
 }
 
 button.primary {
@@ -182,7 +198,7 @@ button.primary {
 	border: 1px solid var(--blue);
 	background-color: var(--blue);
 
-	box-shadow: 0px 4px 25px 0px var(--black-shadow);
+	/* box-shadow: 0px 4px 25px 0px var(--black-shadow); */
 }
 
 button.primary span {
@@ -205,12 +221,12 @@ button.secondary {
 	border: 1px solid var(--white);
 	background-color: var(--dark-grey);
 
-	box-shadow: 0px 4px 25px 0px var(--black-shadow);
+	/* box-shadow: 0px 4px 25px 0px var(--black-shadow); */
 }
 
 button.secondary span {
 	padding: 0 .4rem;
-}
+} 
 
 @media only screen and (max-width: 1600px) {
 	:root {
