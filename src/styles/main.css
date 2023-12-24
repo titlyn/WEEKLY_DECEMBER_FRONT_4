@@ -76,6 +76,8 @@ body {
 	gap: 6rem;
 	position: relative;
 	overflow-y: hidden;
+
+	scroll-behavior: smooth;
 }
 
 body.loaded {

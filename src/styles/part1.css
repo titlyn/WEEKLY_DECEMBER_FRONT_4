@@ -52,7 +52,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 2rem var(--horiz-padding);
+    padding: 1.6rem var(--horiz-padding);
 
     position: relative;
 }
@@ -125,22 +125,16 @@ header nav #center {
     transition: width 0.2s ease-in-out;
 }
 
-.links a:hover::before {
+.links a:hover::before, .links a.active::before {
     width: 100%;
 }
 
-.links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 0.2rem solid var(--white);
-    transition: width 0.2s ease-in-out;
+.links a.active::before{
+    background-color: #e737b7;
 }
 
-.links a.active::after {
-    width: 100%;
+#work{
+    padding-top:  var(--horiz-padding);
 }
 
 #work h1{
