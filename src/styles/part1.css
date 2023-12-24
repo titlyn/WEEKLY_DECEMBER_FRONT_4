@@ -172,6 +172,7 @@ header nav #center {
 
 #features-content {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
@@ -179,24 +180,27 @@ header nav #center {
 #left-features {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
 #chatbot {
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+    max-height: calc(100% + 2rem);
+    object-fit: cover;
 }
 
 #linechart {
     position: absolute;
-    right: -2rem;
-    bottom: -4rem;
+    right: -1rem;
+    bottom: -2.5rem;
     height: 250px;
     width: 400px;
 }
 
 #right-features {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,8 +219,13 @@ header nav #center {
     align-items: center;
 }
 
+#right-features h6{
+    line-height: 1.8rem;
+}
+
 #right-features .card .card-title .card-logo img {
-    width: 30px;
+    width: 1.8rem;
+    height: auto;
 }
 
 #right-features .card .card-title .card-text {
@@ -275,19 +284,15 @@ header nav #center {
     }
 
     #right-features {
-        width: 80%;
-        margin-top: 10%;
+        flex-direction: row;
+        width: 100%;
+        margin: 2.6rem auto;
+        padding: 0;
     }
 
-    #right-features .card:nth-child(2) {
-        right: 0;
-        display: flex;
-        margin-left: 20%;
-    }
-
-    #right-features .card:nth-child(1),
-    .card:nth-child(3) {
-        margin-left: 0;
+    #right-features .card{
+        width: max-content;
+        position: relative;
     }
 
     #linechart {
@@ -423,6 +428,10 @@ header nav #center {
         background-color: white;
         border-radius: 10px;
         padding: 3rem 0 1rem 0;
+    }
+
+    #right-features{
+        flex-direction: column;
     }
 }
 
