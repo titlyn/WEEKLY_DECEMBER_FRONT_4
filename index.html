@@ -12,463 +12,510 @@
 <body>
     <div id="loader"></div>
     <!-- Ny ambony tode mande eto ambany eto fa tsy idina anaty div be ray tsony -->
-    <header>
-        <nav>
-            <a id="logo" href="/">
-                <img src="./assets/logo/logo-dark.svg" class="logo" alt="logo">
-            </a>
-
-            <div id="center">
-                <div class="links">
-                    <a href="#work" nav-link>Home</a>
-                    <a href="#gallery" nav-link>Product</a>
-                    <a href="#features" nav-link>About</a>
-                    <a href="#cta" nav-link>Contact</a>
+    
+    <div id="main">
+        <header>
+            <nav>
+                <a id="logo" href="/">
+                    <img src="./assets/logo/logo-dark.svg" class="logo dark" alt="logo">
+                    <img src="./assets/logo/logo-light.svg" class="logo light" alt="logo">
+                </a>
+    
+                <div id="center">
+                    <div class="links">
+                        <a href="#work" nav-link>Home</a>
+                        <a href="#gallery" nav-link>Product</a>
+                        <a href="#features" nav-link>About</a>
+                        <a href="#cta" nav-link>Contact</a>
+                    </div>
+                </div>
+                <div id="login">
+                    <button name="login" class="secondary">
+                        <span>
+                            Login
+                        </span>
+                    </button>
+                    <button id="menu">
+                        <div class="long"></div>
+                        <div class="middle"></div>
+                        <div class="short"></div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+    
+        <div id="work">
+            <div id="work-description" class="content">
+                <div class="mini-header">
+                    <h1>Work at the speed of thought</h1>
+                    <p>
+                        Most calendars are designed for teams. State is designed for
+                        freelancers who want a simple way to plan their schedule.
+                    </p>
+                </div>
+    
+                <div class="button-container">
+                    <button name="try-for" class="primary">
+                        <span>
+                            Try For Free
+                        </span>
+                    </button>
+    
+                    <button name="learn" class="secondary large">
+                        <span>
+                            Learn More
+                        </span>
+                    </button>
                 </div>
             </div>
-            <div id="login">
-                <button name="login" class="secondary">
-                    <span>
-                        Login
-                    </span>
-                </button>
-                <button id="menu">
-                    <div class="long"></div>
-                    <div class="middle"></div>
-                    <div class="short"></div>
-                </button>
+    
+            <div class="image-container">
+                <img src="/assets//img/screens.webp" alt="Screens">
             </div>
-        </nav>
-    </header>
-
-    <div id="work">
-        <div id="work-description" class="content">
+        </div>
+    
+        <div id="features" class="content">
             <div class="mini-header">
-                <h1>Work at the speed of thought</h1>
+                <h2>FEATURES</h2>
                 <p>
-                    Most calendars are designed for teams. State is designed for
-                    freelancers who want a simple way to plan their schedule.
+                    Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan
+                    their schedule.
                 </p>
             </div>
     
-            <div class="button-container">
-                <button name="try-for" class="primary">
-                    <span>
-                        Try For Free
-                    </span>
-                </button>
+            <div id="features-content">
+                <div id="left-features">
+                    <img id="chatbot" src="/assets/img/chatbot.webp" alt="chatbot">
+                    <img id="linechart" src="/assets/img/linechart.webp" alt="linechart">
+                </div>
     
-                <button name="learn" class="secondary large">
-                    <span>
-                        Learn More
-                    </span>
-                </button>
-            </div>
-        </div>
-
-        <div class="image-container">
-            <img src="/assets//img/screens.webp" alt="Screens">
-        </div>
-    </div>
-
-    <div id="features" class="content">
-        <div class="mini-header">
-            <h2>FEATURES</h2>
-            <p>
-                Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
-            </p>
-        </div>
-
-        <div id="features-content">
-            <div id="left-features">
-                <img id="chatbot" src="/assets/img/chatbot.webp" alt="chatbot">
-                <img id="linechart" src="/assets/img/linechart.webp" alt="linechart">
-            </div>
-
-            <div id="right-features">
-                <div class="card">
-                    <div class="card-title">
-                        <div class="card-logo">
-                            <img src="/assets/icons/restaurant.svg" alt="restaurant">
+                <div id="right-features">
+                    <div class="card">
+                        <div class="card-title">
+                            <div class="card-logo">
+                                <img src="/assets/icons/restaurant.svg" alt="restaurant">
+                            </div>
+                            <div class="card-text">
+                                <h6>A single source <br> of truth</h6>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <h6>A single source <br> of truth</h6>
-                        </div>
+                        <p>
+                            When you add work to your <br>
+                            Slate calendar we automatically <br>
+                            calculate useful insights
+                        </p>
                     </div>
-                    <p>
-                        When you add work to your <br>
-                        Slate calendar we automatically <br>
-                        calculate useful insights
-                    </p>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <div class="card-logo">
-                            <img src="/assets/icons/alien.svg" alt="alien">
+                    <div class="card">
+                        <div class="card-title">
+                            <div class="card-logo">
+                                <img src="/assets/icons/alien.svg" alt="alien">
+                            </div>
+                            <div class="card-text">
+                                <h6>Intuitive <br> interface</h6>
+                            </div>
                         </div>
-                        <div class="card-text">
-                           <h6>Intuitive <br> interface</h6>
-                        </div>
+                        <p>
+                            When you add work to your <br>
+                            Slate calendar we automatically <br>
+                            calculate useful insights
+                        </p>
                     </div>
-                    <p>
-                        When you add work to your <br>
-                        Slate calendar we automatically <br>
-                        calculate useful insights
-                    </p>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <div class="card-logo">
-                            <img src="/assets/icons/infinity.svg" alt="infinity">
+                    <div class="card">
+                        <div class="card-title">
+                            <div class="card-logo">
+                                <img src="/assets/icons/infinity.svg" alt="infinity">
+                            </div>
+                            <div class="card-text">
+                                <h6>Or with rules</h6>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <h6>Or with rules</h6>
-                        </div>
+                        <p>
+                            When you add work to your <br>
+                            Slate calendar we automatically <br>
+                            calculate useful insights
+                        </p>
                     </div>
-                    <p>
-                        When you add work to your <br>
-                        Slate calendar we automatically <br>
-                        calculate useful insights
-                    </p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="contents" class="content">
-        <div class="mini-header">
-            <h2>Contents</h2>
-            <p>
-                We focus on ergonomics and meeting you where you work. <br>
-                It's only a keystroke away.
-            </p>
-        </div>
-
-        <div id="contents-content">
-            <div class="content-card">
+    
+        <div id="contents" class="content">
+            <div class="mini-header">
+                <h2>Contents</h2>
+                <p>
+                    We focus on ergonomics and meeting you where you work. <br>
+                    It's only a keystroke away.
+                </p>
+            </div>
+    
+            <div id="contents-content">
+                <div class="content-card">
                     <h5>Work</h5>
                     <p>Ever wondered you're too reliant <br> on a client for work? Slate helps <br> you identify .</p>
-
-                <div class="button-content">
-                    <button name="sign-up" class="primary">Sign Up</button>
+    
+                    <div class="button-content">
+                        <button name="sign-up" class="primary">Sign Up</button>
+                    </div>
+    
+                    <div class="card-img">
+                        <img src="/assets/img/macbook.webp" alt="mac">
+                    </div>
                 </div>
-
-                <div class="card-img">
-                    <img src="/assets/img/macbook.webp" alt="mac">
-                </div>
-            </div>
-            <div class="content-card">
+                <div class="content-card">
                     <h5>Design with real data</h5>
                     <p>Ever wondered you're too reliant <br> on a client for work? Slate helps <br> you identify .</p>
-                <div class="button-content">
-                    <button name="try-for" class="primary">Try For Free</button>
-                </div>
-
-                <div class="card-img">
-                    <img class="chat-b" src="/assets/img/board-notif.png" alt="board">
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="gallery" class="content">
-        <div class="mini-header">
-            <h2>Gallery</h2>
-            <p>
-                We focus on ergonomics and meeting you where you work.
-                <br>
-                It's only a keystroke away.
-            </p>
-        </div>
-        <div id="img-grid">
-            <div class="grid-item">
-                <img src="./assets/img/drone.webp" alt="drone">
-            </div>
-            <div class="grid-item desk-only">
-                <img src="./assets/img/tablette.webp" alt="tablette">
-            </div>
-            <div class="grid-item desk-only">
-                <img src="./assets/img/working-women.webp" alt="working">
-            </div>
-            <div class="grid-item desk-only">
-                <img src="./assets/img/do-more.webp" alt="do more">
-            </div>
-            <div class="grid-item desk-only left">
-                <img src="./assets/img/dev.webp" alt="dev">
-            </div>
-            <div class="grid-item desk-only">
-                <img src="./assets/img/working-microsoft.webp" alt="workin">
-            </div>
-            <div class="grid-item desk-only right">
-                <img src="./assets/img/canon.webp" alt="canon">
-            </div>
-            <div class="grid-item mobil-only">
-                <img src="./assets/img/casque.webp" alt="headphone">
-            </div>
-            <div class="grid-item mobil-only">
-                <img src="./assets/img/work.webp" alt="work 1">
-            </div>
-            <div class="grid-item mobil-only">
-                <img src="./assets/img/mac.webp" alt="work 2">
-            </div>
-        </div>
-
-        <button name="See more" class="secondary">
-            <span>
-                See more
-            </span>
-        </button>
-    </div>
-
-    <div id="partner" class="content">
-        <div class="mini-header">
-            <h2>Partners</h2>
-            <p>
-                We focus on ergonomics and meeting you where you work.
-                <br>
-                It's only a keystroke away.
-            </p>
-        </div>
-        <div id="brands">
-            <img src="./assets/logo/logos_apple-app-store.svg" alt="Apple store">
-            <img src="./assets/logo/logos_apiary.svg" alt="Apiary">
-            <img src="./assets/logo/logos_android-icon.svg" alt="Android">
-            <img src="./assets/logo/logos_basecamp.svg" alt="Basecamp">
-            <img src="./assets/logo/logos_airbnb.svg" alt="Airbnb">
-            <img src="./assets/logo/logos_ibm.svg" alt="IBM" id="ibm">
-        </div>
-        <button name="All partners" class="secondary">
-            <span>
-                All Partners
-            </span>
-        </button>
-    </div>
-
-    <div id="testimonials" class="content">
-        <div class="mini-header">
-            <h2>Testimonials</h2>
-        </div>
-        <div id="testimonial-cards">
-            <div class="cards-col">
-                <div class="testimonial-card desk-only">
-                    <div class="card-header">
-                        <img src="./assets/img/claire-bell.webp" alt="Claire Bell">
-                        <p>
-                            <span>Claire Bell</span>
-                            <span>Designer</span>
-                        </p>
+                    <div class="button-content">
+                        <button name="try-for" class="primary">Try For Free</button>
                     </div>
-                    <P class="card-content">
-                        Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your financial
-                        goal for the month and year.your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card desk-only">
-                    <div class="card-header">
-                        <img src="./assets/img/ralph-fisher.webp" alt="Ralph Fisher">
-                        <p>
-                            <span>Ralph Fisher</span>
-                            <span>Designer</span>
-                        </p>
+    
+                    <div class="card-img">
+                        <img class="chat-b" src="/assets/img/board-notif.png" alt="board">
                     </div>
-                    <P class="card-content">
-                        Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card mobil-only">
-                    <div class="card-header">
-                        <img src="./assets/img/wade-stewart.webp" alt="Wade Steward">
-                        <p>
-                            <span>Wade Steward</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach your financial goal for the
-                        month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your
-                        financial goal for the month and
-                        year.your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card mobil-only">
-                    <div class="card-header">
-                        <img src="./assets/img/philip-watson.webp" alt="Philip Watson">
-                        <p>
-                            <span>Philip Watson</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach your financial goal for the
-                        month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your
-                        financial goal for the month and
-                        year.your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-            </div>
-            <div class="cards-col">
-                <div class="testimonial-card desk-only">
-                    <div class="card-header">
-                        <img src="./assets/img/francisco-lane.webp" alt="Francisco Lane">
-                        <p>
-                            <span>Francisco Lane</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card mobil-only">
-                    <div class="card-header">
-                        <img src="./assets/img/francisco-lane.webp" alt="Arthur Wilson">
-                        <p>
-                            <span>Arthur Wilson</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card desk-only">
-                    <div class="card-header">
-                        <img src="./assets/img/jorge-murphy.webp" alt="Jorge Murphy">
-                        <p>
-                            <span>Jorge Murphy</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your financial
-                        goal for the month and year.
-                    </P>
-                </div>
-                <div class="testimonial-card mobil-only">
-                    <div class="card-header">
-                        <img src="./assets/img/regina-black.webp" alt="Regina Black">
-                        <p>
-                            <span>Regina Black</span>
-                            <span>Designer</span>
-                        </p>
-                    </div>
-                    <P class="card-content">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach your financial goal for the
-                        month and year. Slate helps
-                        you see how many more days<br>
-                        you need to work to reach your
-                        financial goal for the month and
-                        year.your financial
-                        goal for the month and year.
-                    </P>
+    
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="cta" class="content">
-        <div class="container">
-            <div id="cta-content">
-                <h2>OpenType features and Variable fonts</h2>
-                <button class="primary">Try For Free</button>
-            </div>
-            <div id="cta-img">
-                <img src="./assets/img/chart.webp" alt="chart">
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="left-footer">
-            <div class="footer-content">
-                <h6>Fingertipe</h6>
-                <div class="footer-links">
-                    <a href="">Home</a>
-                    <a href="">Examples</a>
-                    <a href="">Pricing</a>
-                    <a href="">Updates</a>
-                </div>
-            </div>
-            <div class="footer-content">
-                <h6>Resources</h6>
-                <div class="footer-links">
-                    <a href="">Home</a>
-                    <a href="">Examples</a>
-                    <a href="">Pricing</a>
-                    <a href="">Updates</a>
-                </div>
-            </div>
-            <div class="footer-content">
-                <h6>About</h6>
-                <div class="footer-links">
-                    <a href="">Home</a>
-                    <a href="">Examples</a>
-                    <a href="">Pricing</a>
-                    <a href="">Updates</a>
-                </div>
-            </div>
-        </div>
-        <div class="right-footer">
-            <div id="infos">
-                <p class="info location">
-                    <img src="./assets/logo/bx_bx-map.png" alt="location">
-                    <span>7480 Mockingbird Hill undefined </span>
-                </p>
-                <p class="info phone">
-                    <img src="./assets/logo/ic_baseline-phone-android.png" alt="phone number">
-                    <span>(239) 555-0108</span>
+    
+        <div id="gallery" class="content">
+            <div class="mini-header">
+                <h2>Gallery</h2>
+                <p>
+                    We focus on ergonomics and meeting you where you work.
+                    <br>
+                    It's only a keystroke away.
                 </p>
             </div>
-            <div id="footer-socials">
-                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/logo/ant-design_twitter-outlined.png" alt="Twitter">
-                </a>
-                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/logo/ant-design_facebook-filled.png" alt="Facebook">
-                </a>
-                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/logo/ant-design_linkedin-filled.png" alt="Linkedin">
-                </a>
+            <div id="img-grid">
+                <div class="grid-item">
+                    <img src="./assets/img/drone.webp" alt="drone">
+                </div>
+                <div class="grid-item desk-only">
+                    <img src="./assets/img/tablette.webp" alt="tablette">
+                </div>
+                <div class="grid-item desk-only">
+                    <img src="./assets/img/working-women.webp" alt="working">
+                </div>
+                <div class="grid-item desk-only">
+                    <img src="./assets/img/do-more.webp" alt="do more">
+                </div>
+                <div class="grid-item desk-only left">
+                    <img src="./assets/img/dev.webp" alt="dev">
+                </div>
+                <div class="grid-item desk-only">
+                    <img src="./assets/img/working-microsoft.webp" alt="workin">
+                </div>
+                <div class="grid-item desk-only right">
+                    <img src="./assets/img/canon.webp" alt="canon">
+                </div>
+                <div class="grid-item mobil-only">
+                    <img src="./assets/img/casque.webp" alt="headphone">
+                </div>
+                <div class="grid-item mobil-only">
+                    <img src="./assets/img/work.webp" alt="work 1">
+                </div>
+                <div class="grid-item mobil-only">
+                    <img src="./assets/img/mac.webp" alt="work 2">
+                </div>
+            </div>
+    
+            <button name="See more" class="secondary">
+                <span>
+                    See more
+                </span>
+            </button>
+        </div>
+    
+        <div id="partner" class="content">
+            <div class="mini-header">
+                <h2>Partners</h2>
+                <p>
+                    We focus on ergonomics and meeting you where you work.
+                    <br>
+                    It's only a keystroke away.
+                </p>
+            </div>
+            <div id="brands">
+                <img src="./assets/logo/logos_apple-app-store.svg" alt="Apple store">
+                <img src="./assets/logo/logos_apiary.svg" alt="Apiary">
+                <img src="./assets/logo/logos_android-icon.svg" alt="Android">
+                <img src="./assets/logo/logos_basecamp.svg" alt="Basecamp">
+                <img src="./assets/logo/logos_airbnb.svg" alt="Airbnb">
+                <img src="./assets/logo/logos_ibm.svg" alt="IBM" id="ibm">
+            </div>
+            <button name="All partners" class="secondary">
+                <span>
+                    All Partners
+                </span>
+            </button>
+        </div>
+    
+        <div id="testimonials" class="content">
+            <div class="mini-header">
+                <h2>Testimonials</h2>
+            </div>
+            <div id="testimonial-cards">
+                <div class="cards-col">
+                    <div class="testimonial-card desk-only">
+                        <div class="card-header">
+                            <img src="./assets/img/claire-bell.webp" alt="Claire Bell">
+                            <p>
+                                <span>Claire Bell</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many more days
+                            you need to work to reach your financial
+                            goal for the month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your financial
+                            goal for the month and year.your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card desk-only">
+                        <div class="card-header">
+                            <img src="./assets/img/ralph-fisher.webp" alt="Ralph Fisher">
+                            <p>
+                                <span>Ralph Fisher</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many more days
+                            you need to work to reach your financial
+                            goal for the month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card mobil-only">
+                        <div class="card-header">
+                            <img src="./assets/img/wade-stewart.webp" alt="Wade Steward">
+                            <p>
+                                <span>Wade Steward</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach your financial goal for the
+                            month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your
+                            financial goal for the month and
+                            year.your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card mobil-only">
+                        <div class="card-header">
+                            <img src="./assets/img/philip-watson.webp" alt="Philip Watson">
+                            <p>
+                                <span>Philip Watson</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach your financial goal for the
+                            month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your
+                            financial goal for the month and
+                            year.your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                </div>
+                <div class="cards-col">
+                    <div class="testimonial-card desk-only">
+                        <div class="card-header">
+                            <img src="./assets/img/francisco-lane.webp" alt="Francisco Lane">
+                            <p>
+                                <span>Francisco Lane</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many more days
+                            you need to work to reach your financial
+                            goal for the month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card mobil-only">
+                        <div class="card-header">
+                            <img src="./assets/img/francisco-lane.webp" alt="Arthur Wilson">
+                            <p>
+                                <span>Arthur Wilson</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many more days
+                            you need to work to reach your financial
+                            goal for the month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card desk-only">
+                        <div class="card-header">
+                            <img src="./assets/img/jorge-murphy.webp" alt="Jorge Murphy">
+                            <p>
+                                <span>Jorge Murphy</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many more days
+                            you need to work to reach your financial
+                            goal for the month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                    <div class="testimonial-card mobil-only">
+                        <div class="card-header">
+                            <img src="./assets/img/regina-black.webp" alt="Regina Black">
+                            <p>
+                                <span>Regina Black</span>
+                                <span>Designer</span>
+                            </p>
+                        </div>
+                        <P class="card-content">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach your financial goal for the
+                            month and year. Slate helps
+                            you see how many more days<br>
+                            you need to work to reach your
+                            financial goal for the month and
+                            year.your financial
+                            goal for the month and year.
+                        </P>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    
+        <div id="cta" class="content">
+            <div class="container">
+                <div id="cta-content">
+                    <h2>OpenType features and Variable fonts</h2>
+                    <button class="primary">Try For Free</button>
+                </div>
+                <div id="cta-img">
+                    <img src="./assets/img/chart.webp" alt="chart">
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="left-footer">
+                <div class="footer-content">
+                    <h6>Fingertipe</h6>
+                    <div class="footer-links">
+                        <a href="">Home</a>
+                        <a href="">Examples</a>
+                        <a href="">Pricing</a>
+                        <a href="">Updates</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h6>Resources</h6>
+                    <div class="footer-links">
+                        <a href="">Home</a>
+                        <a href="">Examples</a>
+                        <a href="">Pricing</a>
+                        <a href="">Updates</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h6>About</h6>
+                    <div class="footer-links">
+                        <a href="">Home</a>
+                        <a href="">Examples</a>
+                        <a href="">Pricing</a>
+                        <a href="">Updates</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div id="infos">
+                    <p class="info location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                            <path id="interior"
+                                d="M23 27.3353C27.2281 27.3353 30.6666 23.8968 30.6666 19.6686C30.6666 15.4405 27.2281 12.002 23 12.002C18.7718 12.002 15.3333 15.4405 15.3333 19.6686C15.3333 23.8968 18.7718 27.3353 23 27.3353ZM23 15.8353C25.1141 15.8353 26.8333 17.5545 26.8333 19.6686C26.8333 21.7827 25.1141 23.502 23 23.502C20.8859 23.502 19.1666 21.7827 19.1666 19.6686C19.1666 17.5545 20.8859 15.8353 23 15.8353Z"
+                                fill="white" />
+                            <path
+                                d="M21.8884 42.3123C22.2128 42.5439 22.6014 42.6685 23.0001 42.6685C23.3987 42.6685 23.7873 42.5439 24.1117 42.3123C24.6944 41.9002 38.389 32.0121 38.3334 19.6688C38.3334 11.2144 31.4545 4.33545 23.0001 4.33545C14.5457 4.33545 7.66673 11.2144 7.66673 19.6592C7.61115 32.0121 21.3057 41.9002 21.8884 42.3123ZM23.0001 8.16878C29.3423 8.16878 34.5001 13.3265 34.5001 19.6784C34.5403 28.1845 26.0897 35.8225 23.0001 38.3275C19.9123 35.8205 11.4598 28.1807 11.5001 19.6688C11.5001 13.3265 16.6578 8.16878 23.0001 8.16878Z"
+                                fill="white" />
+                        </svg>
+                        <span>7480 Mockingbird Hill undefined </span>
+                    </p>
+                    <p class="info phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path
+                                d="M23.3334 1.46045H11.6667C9.24585 1.46045 7.29169 3.41462 7.29169 5.83545V29.1688C7.29169 31.5896 9.24585 33.5438 11.6667 33.5438H23.3334C25.7542 33.5438 27.7084 31.5896 27.7084 29.1688V5.83545C27.7084 3.41462 25.7542 1.46045 23.3334 1.46045ZM20.4167 30.6271H14.5834V29.1688H20.4167V30.6271ZM25.1563 26.2521H9.84377V5.83545H25.1563V26.2521Z"
+                                fill="white" />
+                        </svg>
+                        <span>(239) 555-0108</span>
+                    </p>
+                </div>
+                <div id="footer-socials">
+                    <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none">
+                            <path
+                                d="M37.145 10.6804C35.9202 11.2088 34.5873 11.589 33.2144 11.7371C34.6398 10.8903 35.7072 9.55248 36.2164 7.97465C34.8788 8.77033 33.4136 9.32827 31.8855 9.62372C31.2469 8.94099 30.4745 8.39709 29.6165 8.02592C28.7585 7.65475 27.8332 7.46426 26.8983 7.46633C23.1159 7.46633 20.0739 10.5323 20.0739 14.2948C20.0739 14.8231 20.1379 15.3514 20.242 15.8598C14.5783 15.5636 9.52705 12.8578 6.16887 8.71514C5.55697 9.76028 5.23632 10.9503 5.24026 12.1614C5.24026 14.5309 6.44505 16.6203 8.28224 17.8491C7.19955 17.8064 6.14222 17.5088 5.19624 16.9805V17.0646C5.19624 20.3827 7.54176 23.1325 10.6678 23.7649C10.0808 23.9174 9.47704 23.9954 8.87062 23.9971C8.42633 23.9971 8.00606 23.953 7.58178 23.893C8.44634 26.5987 10.964 28.564 13.9619 28.6281C11.6164 30.4653 8.67849 31.5459 5.48843 31.5459C4.91605 31.5459 4.38771 31.5259 3.83936 31.4619C6.86532 33.4032 10.4556 34.5239 14.3222 34.5239C26.8743 34.5239 33.7428 24.1251 33.7428 15.0993C33.7428 14.8031 33.7428 14.5069 33.7227 14.2107C35.0516 13.2381 36.2164 12.0333 37.145 10.6804Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <path
+                                d="M36.2103 4.98486H6.75117C6.04271 4.98486 5.47034 5.55723 5.47034 6.26569V35.7248C5.47034 36.4333 6.04271 37.0056 6.75117 37.0056H36.2103C36.9187 37.0056 37.4911 36.4333 37.4911 35.7248V6.26569C37.4911 5.55723 36.9187 4.98486 36.2103 4.98486ZM32.5119 14.3309H29.9542C27.9489 14.3309 27.5607 15.2835 27.5607 16.6845V19.7705H32.3478L31.7234 24.6016H27.5607V37.0056H22.5694V24.6056H18.3947V19.7705H22.5694V16.2081C22.5694 12.0735 25.0951 9.82 28.7855 9.82C30.5546 9.82 32.0716 9.95209 32.5159 10.0121V14.3309H32.5119Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <path
+                                d="M36.1981 4.98486H6.73902C6.03056 4.98486 5.45819 5.55723 5.45819 6.26569V35.7248C5.45819 36.4333 6.03056 37.0056 6.73902 37.0056H36.1981C36.9066 37.0056 37.479 36.4333 37.479 35.7248V6.26569C37.479 5.55723 36.9066 4.98486 36.1981 4.98486ZM14.9564 32.2706H10.2053V16.9887H14.9564V32.2706ZM12.5828 14.8993C12.0382 14.8993 11.5057 14.7378 11.0529 14.4352C10.6 14.1326 10.2471 13.7025 10.0386 13.1993C9.83022 12.6961 9.77568 12.1425 9.88194 11.6083C9.9882 11.0741 10.2505 10.5834 10.6356 10.1983C11.0207 9.81316 11.5114 9.55089 12.0456 9.44464C12.5798 9.33838 13.1335 9.39291 13.6366 9.60134C14.1398 9.80977 14.5699 10.1627 14.8725 10.6156C15.1751 11.0684 15.3366 11.6009 15.3366 12.1455C15.3326 13.6665 14.0998 14.8993 12.5828 14.8993ZM32.7439 32.2706H27.9968V24.8377C27.9968 23.0646 27.9648 20.7871 25.5272 20.7871C23.0576 20.7871 22.6774 22.7164 22.6774 24.7097V32.2706H17.9343V16.9887H22.4892V19.078H22.5533C23.1857 17.8772 24.7347 16.6084 27.0482 16.6084C31.8593 16.6084 32.7439 19.7745 32.7439 23.8891V32.2706Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
+        <div id="theme-toggler">    
+            <div id="theme-btns">
+                <p>Theme</p>
+                <button name="dark" id="dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="480" height="480">
+                        <path
+                            d="M22,21c-6.627,0-12-5.373-12-12c0-1.95,0.475-3.785,1.3-5.412C6.485,5.148,3,9.665,3,15c0,6.627,5.373,12,12,12 c4.678,0,8.72-2.682,10.7-6.588C24.534,20.79,23.292,21,22,21z" />
+                    </svg>
+                </button>
+                <button name="light" id="light">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="480" height="480">
+                        <path
+                            d="M14.984375 0.98632812 A 1.0001 1.0001 0 0 0 14 2L14 5 A 1.0001 1.0001 0 1 0 16 5L16 2 A 1.0001 1.0001 0 0 0 14.984375 0.98632812 z M 5.796875 4.7988281 A 1.0001 1.0001 0 0 0 5.1015625 6.515625L7.2226562 8.6367188 A 1.0001 1.0001 0 1 0 8.6367188 7.2226562L6.515625 5.1015625 A 1.0001 1.0001 0 0 0 5.796875 4.7988281 z M 24.171875 4.7988281 A 1.0001 1.0001 0 0 0 23.484375 5.1015625L21.363281 7.2226562 A 1.0001 1.0001 0 1 0 22.777344 8.6367188L24.898438 6.515625 A 1.0001 1.0001 0 0 0 24.171875 4.7988281 z M 15 8 A 7 7 0 0 0 8 15 A 7 7 0 0 0 15 22 A 7 7 0 0 0 22 15 A 7 7 0 0 0 15 8 z M 2 14 A 1.0001 1.0001 0 1 0 2 16L5 16 A 1.0001 1.0001 0 1 0 5 14L2 14 z M 25 14 A 1.0001 1.0001 0 1 0 25 16L28 16 A 1.0001 1.0001 0 1 0 28 14L25 14 z M 7.9101562 21.060547 A 1.0001 1.0001 0 0 0 7.2226562 21.363281L5.1015625 23.484375 A 1.0001 1.0001 0 1 0 6.515625 24.898438L8.6367188 22.777344 A 1.0001 1.0001 0 0 0 7.9101562 21.060547 z M 22.060547 21.060547 A 1.0001 1.0001 0 0 0 21.363281 22.777344L23.484375 24.898438 A 1.0001 1.0001 0 1 0 24.898438 23.484375L22.777344 21.363281 A 1.0001 1.0001 0 0 0 22.060547 21.060547 z M 14.984375 23.986328 A 1.0001 1.0001 0 0 0 14 25L14 28 A 1.0001 1.0001 0 1 0 16 28L16 25 A 1.0001 1.0001 0 0 0 14.984375 23.986328 z" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
 
     <script type="module" src="./src/js/main.js"></script>
 </body>

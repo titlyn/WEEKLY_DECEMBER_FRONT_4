@@ -165,7 +165,10 @@
     max-width: 1510px;
     display: flex;
     gap: 5.3rem;
+
+    color: #fafafa;
     background-color: var(--light-grey);
+    
     border-radius: 1.6rem;
     -webkit-border-radius: 1.6rem;
     -moz-border-radius: 1.6rem;
@@ -250,13 +253,22 @@ footer .info{
     gap: .6rem;
 }
 
-footer .info.location img{
+footer .info.location svg{
     width: 2.8rem;
     height: 2.8rem;
 }
 
-footer .info.phone   img{
+footer svg path{
+    fill: var(--white);
+}
+
+footer .info.location svg #interior{
+    fill: var(--black);
+}
+
+footer .info.phone svg{
     width: 2.18rem;
+    min-width: 2.18rem;
     height: 2.18rem;
 }
 
@@ -265,11 +277,91 @@ footer .info.phone   img{
     display: flex;
     align-items: center;
     gap: 1.5rem;
+
 }
 
 #footer-socials img{
     width: 2.5rem;
     height: 2.5rem;
+}
+
+#theme-toggler{
+    display: flex;
+    align-items: center;
+
+    color: black;
+    background-color: var(--fluo);
+
+    background: linear-gradient(to right, #e737b7, #bf40e0);
+    gap: 1rem;
+    padding: .6rem .6rem;
+    width: max-content;
+    position: fixed;
+    bottom: 10rem;
+    right: -6.4rem;
+    transition: right .25s ease-in-out;
+    -webkit-transition: right .25s ease-in-out;
+    -moz-transition: right .25s ease-in-out;
+    -ms-transition: right .25s ease-in-out;
+    -o-transition: right .25s ease-in-out;
+}
+
+#theme-toggler:hover{
+    right: 0; 
+}
+
+#theme-toggler p{
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#theme-toggler #theme-btns{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+#theme-btns button{
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: .4rem;
+    border: 1px solid var(--light-grey);
+    border-radius: .4rem;
+    background-color: transparent;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+    transition: border .25s ease, background-color .25s ease;
+    -webkit-transition: border .25s ease, background-color .25s ease;
+    -moz-transition: border .25s ease, background-color .25s ease;
+    -ms-transition: border .25s ease, background-color .25s ease;
+    -o-transition: border .25s ease, background-color .25s ease;
+}
+
+#theme-btns button svg{
+    width: 100%;
+    height: auto;
+    fill: var(--light-grey);
+    transition: fill .25s ease;
+    -webkit-transition: fill .25s ease;
+    -moz-transition: fill .25s ease;
+    -ms-transition: fill .25s ease;
+    -o-transition: fill .25s ease;
+}
+
+html.light #theme-btns button#light, html:not(.light) #theme-btns button#dark{
+    background-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+}
+
+html.light #theme-btns button#light svg, html:not(.light) #theme-btns button#dark svg{
+    fill: white;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -332,6 +424,10 @@ footer .info.phone   img{
     
     footer .left-footer, footer{
         gap: 5rem;
+    }
+
+    footer .info.location svg #interior{
+        fill: var(--white);
     }
 }
 
