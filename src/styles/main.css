@@ -178,7 +178,7 @@ button {
 .primary:hover {
     background-position: -100% 0;
 	border: 0.1rem solid var(--blue);
-	color: var(--white);
+	color: var(--blue);
 }
 
 .secondary:hover {
