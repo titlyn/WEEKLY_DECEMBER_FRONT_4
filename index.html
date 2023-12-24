@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div id="loader"></div>
+    <div id="loader">
+        <img src="./assets/logo/logo-dark.svg" class="logo dark" alt="logo">
+        <img src="./assets/logo/logo-light.svg" class="logo light" alt="logo">
+    </div>
     <!-- Ny ambony tode mande eto ambany eto fa tsy idina anaty div be ray tsony -->
     
     <div id="main">
@@ -23,10 +26,10 @@
     
                 <div id="center">
                     <div class="links">
-                        <a href="#work" nav-link>Home</a>
-                        <a href="#gallery" nav-link>Product</a>
-                        <a href="#features" nav-link>About</a>
-                        <a href="#cta" nav-link>Contact</a>
+                        <a href="#work" class="active">Home</a>
+                        <a href="#features">Product</a>
+                        <a href="#partner">About</a>
+                        <a href="#cta">Contact</a>
                     </div>
                 </div>
                 <div id="login">
@@ -44,7 +47,7 @@
             </nav>
         </header>
     
-        <div id="work">
+        <div id="work" data-scroll-spy>
             <div id="work-description" class="content">
                 <div class="mini-header">
                     <h1>Work at the speed of thought</h1>
@@ -74,7 +77,7 @@
             </div>
         </div>
     
-        <div id="features" class="content">
+        <div id="features" class="content" data-scroll-spy>
             <div class="mini-header">
                 <h2>FEATURES</h2>
                 <p>
@@ -225,7 +228,7 @@
             </button>
         </div>
     
-        <div id="partner" class="content">
+        <div id="partner" class="content" data-scroll-spy>
             <div class="mini-header">
                 <h2>Partners</h2>
                 <p>
@@ -407,7 +410,7 @@
             </div>
         </div>
     
-        <div id="cta" class="content">
+        <div id="cta" class="content" data-scroll-spy>
             <div class="container">
                 <div id="cta-content">
                     <h2>OpenType features and Variable fonts</h2>

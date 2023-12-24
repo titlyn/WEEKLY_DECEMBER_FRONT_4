@@ -4,7 +4,6 @@ const lightToggler = document.querySelector('#light')
 const darkToggler = document.querySelector('#dark')
 
 function setToLightTheme(isLight = false){
-    console.log(isLight);
     if(isLight) {
         rootEl.classList.add('light')
     }
@@ -19,7 +18,7 @@ function saveTheme(isLight = false){
 }
 
 export function setUpTheme(){
-    const save = localStorage.getItem(storageKey) || false
+    const save = localStorage.getItem(storageKey)=='true'
     setToLightTheme(save)
 
     lightToggler.addEventListener('click', () => setToLightTheme(true))
