@@ -14,11 +14,11 @@
     <!-- Ny ambony tode mande eto ambany eto fa tsy idina anaty div be ray tsony -->
     <header>
         <nav>
-            <div id="logo" href="/">
+            <a id="logo" href="/">
                 <img src="./assets/logo/logo-dark.svg" class="logo" alt="logo">
-            </div>
+            </a>
 
-            <div id="center">
+            <div id="center" class="active">
                 <div class="links">
                     <a href="#work" nav-link>Home</a>
                     <a href="#gallery" nav-link>Product</a>
@@ -32,41 +32,42 @@
                         Login
                     </span>
                 </button>
-            </div>
-            <div id="menu">
-                <div class="long"></div>
-                <div class="middle"></div>
-                <div class="short"></div>
+                <button id="menu">
+                    <div class="long"></div>
+                    <div class="middle"></div>
+                    <div class="short"></div>
+                </button>
             </div>
         </nav>
     </header>
 
-    <div id="work" class="content">
-
-        <div class="mini-header">
-            <h2>Work at the speed <br> of thought</h2>
-            <p>
-                Most calendars are designed for teams. State is designed for <br>
-                freelancers who want a simple way to plan their schedule.
-            </p>
-        </div>
-
-        <div class="button-container">
-            <button name="try-for" class="primary">
-                <span>
-                    Try For Free
-                </span>
-            </button>
-
-            <button name="learn" class="secondary large">
-                <span>
-                    Learn More
-                </span>
-            </button>
+    <div id="work">
+        <div id="work-description" class="content">
+            <div class="mini-header">
+                <h1>Work at the speed of thought</h1>
+                <p>
+                    Most calendars are designed for teams. State is designed for
+                    freelancers who want a simple way to plan their schedule.
+                </p>
+            </div>
+    
+            <div class="button-container">
+                <button name="try-for" class="primary">
+                    <span>
+                        Try For Free
+                    </span>
+                </button>
+    
+                <button name="learn" class="secondary large">
+                    <span>
+                        Learn More
+                    </span>
+                </button>
+            </div>
         </div>
 
         <div class="image-container">
-            <img src="/assets/img/background.webp" alt="">
+            <img src="/assets//img/screens.webp" alt="Screens">
         </div>
     </div>
 
@@ -249,7 +250,7 @@
             <div class="cards-col">
                 <div class="testimonial-card desk-only">
                     <div class="card-header">
-                        <img src="./assets/img/claire-bell.png" alt="Claire Bell">
+                        <img src="./assets/img/claire-bell.webp" alt="Claire Bell">
                         <p>
                             <span>Claire Bell</span>
                             <span>Designer</span>
@@ -267,7 +268,7 @@
                 </div>
                 <div class="testimonial-card desk-only">
                     <div class="card-header">
-                        <img src="./assets/img/ralph-fisher.png" alt="Ralph Fisher">
+                        <img src="./assets/img/ralph-fisher.webp" alt="Ralph Fisher">
                         <p>
                             <span>Ralph Fisher</span>
                             <span>Designer</span>
@@ -284,7 +285,7 @@
                 </div>
                 <div class="testimonial-card mobil-only">
                     <div class="card-header">
-                        <img src="./assets/img/wade-stewart.png" alt="Wade Steward">
+                        <img src="./assets/img/wade-stewart.webp" alt="Wade Steward">
                         <p>
                             <span>Wade Steward</span>
                             <span>Designer</span>
@@ -304,7 +305,7 @@
                 </div>
                 <div class="testimonial-card mobil-only">
                     <div class="card-header">
-                        <img src="./assets/img/philip-watson.png" alt="Philip Watson">
+                        <img src="./assets/img/philip-watson.webp" alt="Philip Watson">
                         <p>
                             <span>Philip Watson</span>
                             <span>Designer</span>
@@ -326,7 +327,7 @@
             <div class="cards-col">
                 <div class="testimonial-card desk-only">
                     <div class="card-header">
-                        <img src="./assets/img/francisco-lane.png" alt="Francisco Lane">
+                        <img src="./assets/img/francisco-lane.webp" alt="Francisco Lane">
                         <p>
                             <span>Francisco Lane</span>
                             <span>Designer</span>
@@ -343,7 +344,7 @@
                 </div>
                 <div class="testimonial-card mobil-only">
                     <div class="card-header">
-                        <img src="./assets/img/francisco-lane.png" alt="Arthur Wilson">
+                        <img src="./assets/img/francisco-lane.webp" alt="Arthur Wilson">
                         <p>
                             <span>Arthur Wilson</span>
                             <span>Designer</span>
@@ -360,7 +361,7 @@
                 </div>
                 <div class="testimonial-card desk-only">
                     <div class="card-header">
-                        <img src="./assets/img/jorge-murphy.png" alt="Jorge Murphy">
+                        <img src="./assets/img/jorge-murphy.webp" alt="Jorge Murphy">
                         <p>
                             <span>Jorge Murphy</span>
                             <span>Designer</span>
@@ -377,7 +378,7 @@
                 </div>
                 <div class="testimonial-card mobil-only">
                     <div class="card-header">
-                        <img src="./assets/img/regina-black.png" alt="Regina Black">
+                        <img src="./assets/img/regina-black.webp" alt="Regina Black">
                         <p>
                             <span>Regina Black</span>
                             <span>Designer</span>
@@ -406,10 +407,65 @@
                 <button class="primary">Try For Free</button>
             </div>
             <div id="cta-img">
-                <img src="./assets/img/chart.png" alt="chart">
+                <img src="./assets/img/chart.webp" alt="chart">
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="left-footer">
+            <div class="footer-content">
+                <h6>Fingertipe</h6>
+                <div class="footer-links">
+                    <a href="">Home</a>
+                    <a href="">Examples</a>
+                    <a href="">Pricing</a>
+                    <a href="">Updates</a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h6>Resources</h6>
+                <div class="footer-links">
+                    <a href="">Home</a>
+                    <a href="">Examples</a>
+                    <a href="">Pricing</a>
+                    <a href="">Updates</a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h6>About</h6>
+                <div class="footer-links">
+                    <a href="">Home</a>
+                    <a href="">Examples</a>
+                    <a href="">Pricing</a>
+                    <a href="">Updates</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-footer">
+            <div id="infos">
+                <p class="info location">
+                    <img src="./assets/logo/bx_bx-map.png" alt="location">
+                    <span>7480 Mockingbird Hill undefined </span>
+                </p>
+                <p class="info phone">
+                    <img src="./assets/logo/ic_baseline-phone-android.png" alt="phone number">
+                    <span>(239) 555-0108</span>
+                </p>
+            </div>
+            <div id="footer-socials">
+                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logo/ant-design_twitter-outlined.png" alt="Twitter">
+                </a>
+                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logo/ant-design_facebook-filled.png" alt="Facebook">
+                </a>
+                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logo/ant-design_linkedin-filled.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="./src/js/main.js"></script>
 </body>
