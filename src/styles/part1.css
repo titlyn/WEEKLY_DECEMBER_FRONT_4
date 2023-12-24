@@ -244,12 +244,17 @@ header nav #center {
 }
 
 #contents-content .content-card {
+    display: flex;
+    flex-direction: column;
+
     text-align: center;
-    width: 40%;
+    width: 50%;
+    max-width: 490px;
+
     margin: 1rem;
     background-color: white;
     border-radius: 10px;
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 1.5rem 2.8rem 1.5rem;
 }
 
 #contents-content .content-card h5 {
@@ -259,24 +264,33 @@ header nav #center {
 
 #contents-content .content-card p {
     color: gray;
-    margin: 0 0 4rem 0;
+    margin: 0 0 3.3rem 0;
     line-height: 1.5rem;
 }
 
 #contents-content .content-card button {
-    margin: 0 0 3rem 0;
+    margin: 0 0 3.3rem 0;
 }
 
-#contents-content .content-card img {
+#contents-content .content-card .card-img {
     /* height: 200px; */
-    width: 80%;
-
+    display: flex;
+    width: 95%;
+    margin: auto auto 0 auto;
 }
 
-#contents-content .content-card .chat-b {
+#contents-content .content-card .card-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+
+/* #contents-content .content-card .chat-b {
     height: 40%;
     width: 85%;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
     #features-content {
@@ -397,11 +411,11 @@ header nav #center {
 
     #contents-content .content-card {
         text-align: center;
-        width: 50%;
+        width: 100%;
+        max-width: 300px;
         margin: 1rem;
         background-color: white;
         border-radius: 10px;
-        padding: 3rem 0 1rem 0;
     }
 }
 
@@ -419,15 +433,6 @@ header nav #center {
         width: 60%;
         height: 40%;
         bottom: 2rem;
-    }
-
-    #contents-content .content-card {
-        text-align: center;
-        width: 70%;
-        margin: 1rem;
-        background-color: white;
-        border-radius: 10px;
-        padding: 3rem 0 1rem 0;
     }
 
     #right-features{
