@@ -289,7 +289,7 @@ footer .info.phone svg{
     display: flex;
     align-items: center;
 
-    color: black;
+    color: var(--black);
     background-color: var(--fluo);
 
     background: linear-gradient(to right, #e737b7, #bf40e0);
