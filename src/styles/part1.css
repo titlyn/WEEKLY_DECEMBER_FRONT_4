@@ -137,9 +137,9 @@ header nav #center {
     padding-top:  calc(var(--horiz-padding) / 2);
 }
 
-#work h2{
-    /* font-size: 4.6rem; */
-    max-width: 350px;
+#work h1{
+    font-size: 4rem;
+    max-width: 500px;
 }
 
 #work .button-container {

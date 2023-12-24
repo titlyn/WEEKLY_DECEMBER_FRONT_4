@@ -172,17 +172,18 @@ h6 {
 /* ETo le original*/
 
 button {
-	transition: all 0.3s linear;
+	transition: all 0.3s ease-in-out;
 }
 
 .primary:hover {
-	box-shadow: 0rem 0.99rem 0.43rem -0.33rem var(--blue);
-	transform: translateY(-0.5rem);
+    background-position: -100% 0;
+	border: 0.1rem solid var(--blue);
+	color: var(--white);
 }
 
 .secondary:hover {
-	box-shadow: 0rem 0.99rem 0.43rem -0.33rem var(--white);
-	transform: translateY(-0.5rem);
+    background-position: -100% 0;
+	color: var(--black);
 }
 
 button.primary {
@@ -196,7 +197,9 @@ button.primary {
 
 	color: white;
 	border: 1px solid var(--blue);
-	background-color: var(--blue);
+	/* background-color: var(--blue); */
+	background: linear-gradient(to right, var(--blue) 50%, var(--dark-grey) 50%);
+    background-size: 200% 100%;
 
 	/* box-shadow: 0px 4px 25px 0px var(--black-shadow); */
 }
@@ -219,7 +222,8 @@ button.secondary {
 
 	color: var(--white);
 	border: 1px solid var(--white);
-	background-color: var(--dark-grey);
+	background: linear-gradient(to right, var(--dark-grey) 50%, var(--white) 50%);
+    background-size: 200% 100%;
 
 	/* box-shadow: 0px 4px 25px 0px var(--black-shadow); */
 }
