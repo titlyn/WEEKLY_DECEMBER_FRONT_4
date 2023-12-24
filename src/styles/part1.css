@@ -27,19 +27,19 @@ nav {
 #menu .long {
     width: 100%;
     height: 20%;
-    background-color: white;
+    background-color: var(--white);
 }
 
 #menu .middle {
     width: 70%;
     height: 20%;
-    background-color: white;
+    background-color: var(--white);
 }
 
 #menu .short {
     width: 40%;
     height: 20%;
-    background-color: white;
+    background-color: var(--white);
 }
 
 #nav-toggler {
@@ -114,7 +114,7 @@ header nav #center {
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: white;
+    background-color: var(--white);
     transition: width 0.2s ease-in-out;
 }
 
@@ -128,7 +128,7 @@ header nav #center {
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: 0.2rem solid #fff;
+    border-bottom: 0.2rem solid var(--white);
     transition: width 0.2s ease-in-out;
 }
 
@@ -167,11 +167,12 @@ header nav #center {
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient( transparent, var(--black-gradient));
+    background: linear-gradient( transparent, var(--var(--dark-grey)-gradient));
 }
 
 #features-content {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
@@ -179,24 +180,27 @@ header nav #center {
 #left-features {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
 #chatbot {
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+    max-height: calc(100% + 2rem);
+    object-fit: cover;
 }
 
 #linechart {
     position: absolute;
-    right: -2rem;
-    bottom: -4rem;
+    right: -1rem;
+    bottom: -2.5rem;
     height: 250px;
     width: 400px;
 }
 
 #right-features {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,8 +219,13 @@ header nav #center {
     align-items: center;
 }
 
+#right-features h6{
+    line-height: 1.8rem;
+}
+
 #right-features .card .card-title .card-logo img {
-    width: 30px;
+    width: 1.8rem;
+    height: auto;
 }
 
 #right-features .card .card-title .card-text {
@@ -235,39 +244,53 @@ header nav #center {
 }
 
 #contents-content .content-card {
+    display: flex;
+    flex-direction: column;
+
     text-align: center;
-    width: 40%;
+    width: 50%;
+    max-width: 490px;
+
     margin: 1rem;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 1.5rem 2.8rem 1.5rem;
 }
 
 #contents-content .content-card h5 {
-    color: black;
+    color: var(--black);
     margin: 0 0 3rem 0;
 }
 
 #contents-content .content-card p {
-    color: gray;
-    margin: 0 0 4rem 0;
+    color: var(--grey);
+    margin: 0 0 3.3rem 0;
     line-height: 1.5rem;
 }
 
 #contents-content .content-card button {
-    margin: 0 0 3rem 0;
+    margin: 0 0 3.3rem 0;
 }
 
-#contents-content .content-card img {
+#contents-content .content-card .card-img {
     /* height: 200px; */
-    width: 80%;
-
+    display: flex;
+    width: 95%;
+    margin: auto auto 0 auto;
 }
 
-#contents-content .content-card .chat-b {
+#contents-content .content-card .card-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+
+/* #contents-content .content-card .chat-b {
     height: 40%;
     width: 85%;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
     #features-content {
@@ -275,19 +298,15 @@ header nav #center {
     }
 
     #right-features {
-        width: 80%;
-        margin-top: 10%;
+        flex-direction: row;
+        width: 100%;
+        margin: 2.6rem auto;
+        padding: 0;
     }
 
-    #right-features .card:nth-child(2) {
-        right: 0;
-        display: flex;
-        margin-left: 20%;
-    }
-
-    #right-features .card:nth-child(1),
-    .card:nth-child(3) {
-        margin-left: 0;
+    #right-features .card{
+        width: max-content;
+        position: relative;
     }
 
     #linechart {
@@ -350,7 +369,7 @@ header nav #center {
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-        box-shadow: 0px 4px 31px 0px var(--black-shadow);
+        box-shadow: 0px 4px 31px 0px var(--var(--dark-grey)-shadow);
     }
 
     #center::before{
@@ -359,7 +378,7 @@ header nav #center {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: var(--black-shadow);
+        background-color: var(--var(--dark-grey)-shadow);
     }
 
     #center.active::before {
@@ -392,11 +411,11 @@ header nav #center {
 
     #contents-content .content-card {
         text-align: center;
-        width: 50%;
+        width: 100%;
+        max-width: 350px;
         margin: 1rem;
-        background-color: white;
+        background-color: var(--white);
         border-radius: 10px;
-        padding: 3rem 0 1rem 0;
     }
 }
 
@@ -416,13 +435,8 @@ header nav #center {
         bottom: 2rem;
     }
 
-    #contents-content .content-card {
-        text-align: center;
-        width: 70%;
-        margin: 1rem;
-        background-color: white;
-        border-radius: 10px;
-        padding: 3rem 0 1rem 0;
+    #right-features{
+        flex-direction: column;
     }
 }
 
